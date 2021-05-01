@@ -31,7 +31,7 @@ body {
 #hebergement {
     color: #0065FC;
 }
-#activite {
+#activity {
     color: #1f1f1f;
 }
 
@@ -50,18 +50,18 @@ body {
 /*modification première section*/
 .content-padding {
     padding: 20px;
+    padding-bottom: 10px;
 }
 h1 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 700;
     margin: 10px 0;
 }
 #subtitle-1 {
     font-weight: normal;
-    font-size: 1.2em;
-    text-align: justify;
+    font-size: 1.1em;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 /*zone de saisie*/
@@ -70,7 +70,7 @@ h1 {
     border: 1px solid #f2f2f2;
     border-radius: 10px; 
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 .icon-position {
     width: 50px;
@@ -82,6 +82,7 @@ h1 {
     align-items: center;
     position: relative;
     left: -2px;
+    font-size: 1.1em;
 }
 .icon-search {
     width: 50px;
@@ -94,6 +95,7 @@ h1 {
     color: #fff;
     position: relative;
     left: 2px;
+    font-size: 1em;
 }
 #input {
     height: 46px;
@@ -120,7 +122,7 @@ h1 {
     height: 46px;
     border: 2px solid #d9d9d9;
     border-radius: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     margin-right: 10px;
 }
 .filtre-icon {
@@ -146,11 +148,14 @@ h1 {
 .color-blue {
     color: #0065FC;
 }
+h2 {
+    font-size: 1.3em;
+}
 /*info*/
 #info {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 #info-icon {
     min-width: 24px;
@@ -171,6 +176,152 @@ h1 {
     font-size: 1em;
 }
 
-h4 {
-    font-size: 1.3em;
+/*Aside "les plus populaires*/
+aside {
+    background: #f2f2f2;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
+#header-aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.fa-chart-line {
+    font-size: 1.5em;
+}
+.post-aside {
+    width: 335px;
+    height: 145px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #d9d9d9;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.picture-aside {
+    height: 135px;
+    width: 127px;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px; 
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.subtitle-3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.subtitle-4 {
+    font-size: 0.9em;
+    
+}
+.star-aside {
+    font-size: 0.65em;
+    margin-top: 35px;
+
+}
+.color-grey {
+    color: #d9d9d9;
+}
+/*HEBERGEMENT*/
+.post-hebergement {
+    width: 335px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.picture-hebergement {
+    height: 115px;
+    width: 325px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px; 
+    margin: 5px;
+}
+.subtitles {
+    margin-left: 15px;
+}
+.subtitle-5 {
+    margin-top: 0;
+    margin-bottom: 2.5px;
+    font-size: 1.1em;
+}
+.subtitle-6 {
+    font-size: 0.9em;
+}
+.star-hebergement {
+    margin-top: 5px;
+    font-size: 0.65em;
+}
+#ancre_hebergement {
+    margin-top: 5px;
+    margin-bottom: 17px;
+}
+h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 32px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+/*Activity*/
+.post-activity {
+    width: 335px;
+    height: 190px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+.picture-activity {
+    height: 135px;
+    width: 335px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px; 
+    margin-bottom: 5px;
+}
+.subtitle-7 {
+    font-size: 1.05em;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 5px
+}
+#ancre_activity {
+    margin-bottom: 20px;
+}
+/*FOOTER*/
+footer {
+    background: #f2f2f2;
+}
+#bloc-footer {
+    display: flex;
+    flex-direction: column;
+}
+.link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9em;
+}
+.line-height {
+    line-height: 30px;
+}
+h5 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+
