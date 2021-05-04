@@ -54,7 +54,7 @@ body {
 }
 h1 {
     font-size: 1.4em;
-    font-weight: 700;
+    font-weight: 600;
     margin: 10px 0;
 }
 #subtitle-1 {
@@ -167,6 +167,7 @@ h2 {
     display: flex;
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 30px;
 }
 #info-icon {
     min-width: 24px;
@@ -187,12 +188,11 @@ h2 {
     font-size: 1em;
 }
 
-/*Aside "les plus populaires*/
+/*ASIDE*/
 aside {
     background: #f2f2f2;
-    margin-top: 20px;
+    width: 100%;
     padding-bottom: 20px;
-    margin-bottom: 10px;
 }
 #header-aside {
     display: flex;
@@ -205,7 +205,7 @@ aside {
     font-size: 1.5em;
 }
 .post-aside {
-    width: 335px;
+    width: 100%;
     height: 145px;
     background: #ffffff;
     border-radius: 20px;
@@ -215,8 +215,8 @@ aside {
     margin-bottom: 5px;
 }
 .picture-aside {
+    width: 30%;
     height: 135px;
-    width: 127px;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px; 
     margin-top: 5px;
@@ -243,7 +243,7 @@ aside {
 
 /*HEBERGEMENT*/
 .post-hebergement {
-    width: 335px;
+    width: 100%;
     height: 200px;
     background: #ffffff;
     border-radius: 20px;
@@ -255,7 +255,7 @@ aside {
 }
 .picture-hebergement {
     height: 115px;
-    width: 325px;
+    width: 95%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px; 
     margin: 5px;
@@ -275,9 +275,9 @@ aside {
     margin-top: 5px;
     font-size: 0.65em;
 }
-#ancre_hebergement {
-    margin-top: 5px;
-    margin-bottom: 17px;
+#ancre-hebergement {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 h4 {
     font-size: 1.1em;
@@ -338,5 +338,88 @@ h5 {
     margin-bottom: 5px;
     margin-top: 20px;
 }
+/*DESKTOP VIEW*/
+@media all and (min-width: 700px) {
+    body {
+        padding: 50px;
+    }
+    
+    /*ZONE DE SAISIE*/
+    #search {
+        display: none;
+    }
+    #search-word {
+        display: inline;
+        font-weight: 600;
+    }
+    .icon-search {
+        width: fit-content;
+        padding: 0 15px;
+        border-radius: 0 10px 10px 0;
+    }
+    .search-box {
+        width: 30%;
+    }
+    /*FILTRE*/
+    #filtre-content {
+        display: flex;
+    }
+    #filtres {
+        margin-left: 30px;
+    }
+    .filtre {
+        margin-right: 20px;
+    }
+    /*INFO*/
+    #info {
+        align-items: baseline;
+        margin-bottom: 10px;
+    }
+    /*HEBERGEMENT + ASIDE*/
+    #aside-hebergement {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    
+    }
+    #hebergement-content {
+        background: #f2f2f2;
+        width: 65%;
+        border-radius: 20px;
+        padding: 15px 15px; 
+    }
+    #all-post {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .post-hebergement {
+        width: 30%;
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    .picture-hebergement {
+        width: 96%;
+    }
+    #ancre-hebergement {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
 
-
+    /*Aside*/
+    aside {
+        width: 30%;
+        border-radius: 20px;
+        padding-left: 10px; 
+        padding-right: 10px; 
+        margin-left: 40px;
+    }
+    .post-aside {
+        margin-bottom: 30px;
+    }
+}
