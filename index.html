@@ -36,18 +36,18 @@
             En plein centre ville ou en plein nature
         </p>
         <!--********ZONE DE SAISIE*********-->
-        <div class="search-box">
+        <form method="post" action="traitement.php" class="search-box">
             <div class="icon-position">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="search-input">
-                <input type="text" id="input" name="search" placeholder="Rechercher...">
+            <div class="search-input">    
+                <input type="search" id="search" name="search" placeholder="Rechercher...">
             </div>  
-            <div class="icon-search">
-                <i class="fas fa-search" id="search"></i>
+            <button type="button" class="button-search">
+                <i class="fas fa-search" id="icon-search"></i>
                 <span id="search-word">Rechercher</span>
-            </div>
-        </div>
+            </button>
+        </form>
         <!--************FILTRES**********-->
         <div id="filtre-content">
             <div>
@@ -106,10 +106,10 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                 </div>
-                <div class="post-aside">
+                <div class="card post-aside">
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                     alt="chambre d'hotel" class="picture-aside"/>
-                    <div>
+                    <div class="subtitles-aside">
                         <div>
                             <h3 class="subtitle-3">Hôtel Le soleil du matin</h3>
                             <span class="subtitle-4">Nuit à partir de 128<strong>€</strong></span><br/>
@@ -123,10 +123,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="post-aside">
+                <div class="card post-aside">
                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hôte" 
                         class="picture-aside"/>
-                    <div>
+                    <div class="subtitles-aside">
                         <div>
                             <h3 class="subtitle-3">Au cœur de l'eau Chambres d'hôtes</h3>
                             <span class="subtitle-4">Nuit à partir de 71<strong>€</strong></span><br/>
@@ -140,10 +140,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="post-aside">
+                <div class="card post-aside">
                     <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre d'hôtel" 
                     class="picture-aside"/>
-                    <div>
+                    <div class="subtitles-aside">
                         <div>
                             <h3 class="subtitle-3">Hôtel Tout bleu et Blanc</h3>
                             <span class="subtitle-4">Nuit à partir de 68<strong>€</strong></span><br/>
@@ -162,9 +162,9 @@
         <!--********HEBERGEMENT******-->
         <div id="hebergement-content">
             <div class="content-padding">
-                <h1 id="ancre-hebergement">Hébergement à Marseille</h1>
+                <h1 id="ancrehebergement">Hébergement à Marseille</h1>
                 <div id="all-post">
-                    <div class="post-hebergement">
+                    <div class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre d'auberge" 
                             class="picture-hebergement"/>
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-hebergement">
+                    <div class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-hebergement"/>
@@ -202,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-hebergement">
+                    <div class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-hebergement"/>
@@ -221,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-hebergement">
+                    <div class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-hebergement"/>
@@ -240,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-hebergement">
+                    <div class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre d'auberge" 
                             class="picture-hebergement"/>
@@ -259,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-hebergement">
+                    <div class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre d'auberge" 
                             class="picture-hebergement"/>
@@ -287,7 +287,7 @@
     <section>
         <div class="content-padding">
             <h1 id="ancre_activity">Activités à Marseille</h1>
-            <div class="post-activity">
+            <div class="card post-activity">
                 <div>
                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" 
                     class="picture-activity"/>
@@ -296,7 +296,7 @@
                     <h3 class="subtitle-7">Vieux Port</h3>
                 </div>
             </div>
-            <div class="post-activity">
+            <div class="card post-activity">
                 <div>
                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" 
                     class="picture-activity"/>
@@ -305,7 +305,7 @@
                     <h3 class="subtitle-7">Fort de Pomègues</h3>
                 </div>
             </div>
-            <div class="post-activity">
+            <div class="card post-activity">
                 <div>
                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" 
                     class="picture-activity"/>
@@ -314,7 +314,7 @@
                     <h3 class="subtitle-7">Îles du Frioult</h3>
                 </div>
             </div>
-            <div class="post-activity">
+            <div class="card post-activity">
                 <div>
                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="arc National des Calanques" 
                     class="picture-activity"/>
@@ -323,7 +323,7 @@
                     <h3 class="subtitle-7">Parc National des Calanques</h3>
                 </div>
             </div>
-            <div class="post-activity">
+            <div class="card post-activity">
                 <div>
                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" 
                     class="picture-activity"/>
@@ -332,7 +332,7 @@
                     <h3 class="subtitle-7">Notre-Dame-de-la-Garde</h3>
                 </div>
             </div>
-            <div class="post-activity">
+            <div class="card post-activity">
                 <div>
                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc LongChamp" 
                     class="picture-activity"/>
@@ -347,22 +347,22 @@
     <footer>
         <div class="content-padding">
             <div id="bloc-footer">
-                <div class="line-height">
+                <ul class="line-height">
                     <h5>A propos</h5>
-                    <span><a href="#" class="link">Fonctionnement du site</a></span><br/>
-                    <span><a href="#" class="link">Conditions générales de vente</a></span><br/>
-                    <span><a href="#" class="link">Données de confidentialité</a></span><br/>
-                </div>
-                <div  class="line-height">
+                    <li><a href="#" class="link">Fonctionnement du site</a></li><br/>
+                    <li><a href="#" class="link">Conditions générales de vente</a></li><br/>
+                    <li><a href="#" class="link">Données de confidentialité</a></li><br/>
+                </ul>
+                <ul class="line-height">
                     <h5>Nos Hébergements</h5>
-                    <span><a href="#" class="link">Charte qualité</a></span><br/>
-                    <span><a href="#" class="link">Soumettre votre hôtel</a></span><br/>
-                </div>
-                <div  class="line-height">
+                    <li><a href="#" class="link">Charte qualité</a></li><br/>
+                    <li><a href="#" class="link">Soumettre votre hôtel</a></li><br/>
+                </ul>
+                <ul class="line-height">
                     <h5>Assistance</h5>
-                    <span><a href="#" class="link">Centre d'aide</a></span><br/>
-                    <span><a href="#" class="link">Nous contacter</a></span><br/>
-                </div>
+                    <li><a href="#" class="link">Centre d'aide</a></li><br/>
+                    <li><a href="#" class="link">Nous contacter</a></li><br/>
+                </ul>
             </div>
         </div>
     </footer>
