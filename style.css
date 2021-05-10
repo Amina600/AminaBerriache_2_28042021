@@ -1,3 +1,4 @@
+/*MOBILE FIRST*/
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -434,9 +435,6 @@ h5 {
         padding: 0 15px;
         border-radius: 0 10px 10px 0;
     }
-    .search-box {
-        width: 35%;
-    }
     /*FILTRE*/
     #filtre-content {
         display: flex;
@@ -569,7 +567,7 @@ h5 {
         flex-grow: 1;
     }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 799px) {
     #filtre-content {
         display: flex;
         align-items: baseline;
@@ -625,13 +623,10 @@ h5 {
         flex-grow: 1;
     }
 }
-
-@media screen and (min-width: 800px) and (max-width: 1024px){
+/*SMALL DESKTOP*/
+@media screen and (min-width: 800px) and (max-width: 1023px){
     nav ul li a {
         padding: 40px 20px;
-    }
-    .search-box {
-        width: 60%;
     }
     #aside-hebergement {
         flex-direction: column;
@@ -696,10 +691,9 @@ h5 {
     }
         
 }
+/*MEDIUM DESKTOP*/
 @media screen and (min-width: 1024px) and (max-width: 1290px){
-    .search-box {
-        width: 49%;
-    }
+
     .post-hebergement {
         width: 46%;
         margin-right: 0;
