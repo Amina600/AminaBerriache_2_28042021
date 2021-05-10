@@ -567,6 +567,7 @@ h5 {
         flex-grow: 1;
     }
 }
+/*VIEW TABLETTE*/
 @media screen and (min-width: 500px) and (max-width: 799px) {
     #filtre-content {
         display: flex;
@@ -623,7 +624,7 @@ h5 {
         flex-grow: 1;
     }
 }
-/*SMALL DESKTOP*/
+/*VIEW SMALL DESKTOP*/
 @media screen and (min-width: 800px) and (max-width: 1023px){
     nav ul li a {
         padding: 40px 20px;
@@ -691,7 +692,7 @@ h5 {
     }
         
 }
-/*MEDIUM DESKTOP*/
+/*VIEW MEDIUM DESKTOP*/
 @media screen and (min-width: 1024px) and (max-width: 1290px){
 
     .post-hebergement {
