@@ -45,14 +45,15 @@ body {
 .item-menu-actif:hover {
     border-color: #0065FC;
 }
-#list:hover {
+#menu-mobile a:hover {
     color: #0065FC;
 }
 
 /* MODICFICATION PREMIÈRE SECTION */
 .content-padding-mobile {
+    width: 90%;
     padding: 20px;
-    padding-bottom: 10px;
+    margin: 0;
 }
 h1 {
     font-size: 1.35em;
@@ -75,6 +76,7 @@ h1 {
     border: 1px solid #f2f2f2;
     border-radius: 10px; 
     margin-bottom: 30px;
+    max-width: 410px;
 }
 .icon-position {
     width: 50px;
@@ -171,7 +173,7 @@ h2 {
 /*INFO*/
 #info {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: 15px;
     margin-bottom: 30px;
 }
@@ -198,7 +200,8 @@ h2 {
 aside {
     background: #f2f2f2;
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
 }
 #header-aside {
     display: flex;
@@ -209,6 +212,10 @@ aside {
 }
 .fa-chart-line {
     font-size: 1.5em;
+}
+#aside-content {
+    width: 85%;
+    margin: auto;
 }
 .card {
     max-width: 100%;
@@ -231,11 +238,13 @@ aside {
 }
 .subtitles-aside {
     flex-basis: 45%;
-    margin: 0 20px;
+    margin: 9px 20px;
+    position: relative;
 }
 .subtitle-3 {
     font-size: 1em;
     font-weight: 600;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 .subtitle-4 {
@@ -244,14 +253,19 @@ aside {
 }
 .star-aside {
     font-size: 0.7em;
-    margin-top: 43px;
-
+    position: absolute;
+    bottom: 0;
 }
 .color-grey {
     color: #d9d9d9;
 }
 
 /*HEBERGEMENT*/
+#hebergement-content {
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
 .card {
     max-width: 100%;
     background: #ffffff;
@@ -274,6 +288,7 @@ aside {
 }
 .subtitles {
     margin: 10px 15px;
+    position: relative;
 }
 .subtitle-5 {
     margin-top: 0;
@@ -284,20 +299,26 @@ aside {
     font-size: 0.9em;
 }
 .star-hebergement {
-    margin-top: 5px;
     font-size: 0.65em;
+    position: absolute;
+    bottom: -24px;
 }
 #ancre-hebergement {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 h4 {
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: 700;
     padding-top: 15px;
 }
 
 /*ACTIVITE*/
+#activity-content {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
 
 .card {
     max-width: 100%;
@@ -332,6 +353,10 @@ footer {
     background: #f2f2f2;
     margin-top: 30px;
 }
+.footer-content {
+    width: 85%;
+    margin: auto;
+}
 ul {
     list-style: none; 
     margin: 0;
@@ -356,7 +381,7 @@ h5 {
 }
 
 /*DESKTOP VIEW*/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 800px) {
     .content-padding-desktop {
         padding:0px 50px 50px 50px;
     }
@@ -408,7 +433,7 @@ h5 {
         border-radius: 0 10px 10px 0;
     }
     .search-box {
-        width: 30%;
+        width: 35%;
     }
     /*FILTRE*/
     #filtre-content {
@@ -438,9 +463,10 @@ h5 {
         background: #f2f2f2;
         width: 65%;
         border-radius: 20px;
-        padding: 30px 30px 0 30px;
+        padding: 30px 30px 30px 30px;
+        margin-top: 0;
     }
-    #all-post {
+    #all-post-hebergement {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -472,6 +498,9 @@ h5 {
         padding: 30px 30px 0 30px;
         margin-left: 40px;
     }
+    #aside-content {
+        width: 100%;
+    }
     .post-aside {
         margin-bottom: 30px;
     }
@@ -479,6 +508,9 @@ h5 {
         font-size: 1em;
     }
     /*ACTIVITE*/
+    #activity-content {
+        width: 100%;
+    }
     .post-activity {
         height: 100%;
     }
@@ -523,16 +555,162 @@ h5 {
     }
 
     /*FOOTER*/
+    .footer-content {
+        width: auto;
+        margin: 0;
+    }
     #bloc-footer {
         flex-direction: row;
-        padding: 30px 50px;
+        padding: 30px 0;
     }
     #bloc-footer > div {
         flex-grow: 1;
     }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    #filtre-content {
+        display: flex;
+        align-items: baseline;
+    }
+    h2 {
+        padding-right: 15px;
+    }
+    #info {
+        align-items: baseline;
+    }
+    .content-padding-mobile {
+        padding-bottom: 0;
+    }
+    #aside-content {
+        width: 80%;
+    }
+    .post-hebergement {
+        max-width: 45%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #all-post-hebergement {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .subtitle-5 {
+        font-size: 0.9em;
+    }
+    .subtitle-6 {
+        font-size: 0.85em;
+    }
+    #hebergement-content #activity-hebergement {
+        width: 80%;
+    }
+    .post-activity{
+        max-width: 45%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .all-post-activity {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .footer-content {
+        width: 80%;
+    }
+    #bloc-footer {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    #bloc-footer > div {
+        flex-grow: 1;
+    }
+}
 
-
+@media screen and (min-width: 800px) and (max-width: 1024px){
+    nav ul li a {
+        padding: 40px 20px;
+    }
+    .search-box {
+        width: 60%;
+    }
+    #aside-hebergement {
+        flex-direction: column;
+    }
+    #all-post-hebergement {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #hebergement-content {
+        width: auto;
+        margin-bottom: 25px;
+        padding: 30px 15px 30px 30px;
+    }
+    
+    .post-hebergement {
+        width: 45%;
+        margin-right: 25px;
+    }
+    .subtitle-5 {
+        font-size: 0.95em;
+    }
+    .subtitle-6 {
+        font-size: 0.85em;
+    }
+    aside {
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 40px;
+        padding: 20px 15px 20px 15px;
+    }
+    #all-post-aside {
+        display: flex;
+    }
+    #header-aside {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .post-aside {
+        margin-right: 10px;
+    }
+    .picture-aside {
+        width: 37%;
+    }
+    .subtitle-3 {
+        font-size: 0.8em;
+    }
+    .subtitle-4 {
+        font-size: 0.75em;
+    }
+    #activity-content {
+        width: auto;
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        grid-row-gap: 0px;
+    }
+    .post-activity {
+        width: 45%;
+        margin-right: 5px;
+    }
+        
+}
+@media screen and (min-width: 1024px) and (max-width: 1290px){
+    .search-box {
+        width: 49%;
+    }
+    .post-hebergement {
+        width: 46%;
+        margin-right: 0;
+    }
+    aside {
+        width: 33%;
+    }
+    .subtitle-3 {
+        font-size: 0.9em;
+    }
+    .grid {
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
 }
     
