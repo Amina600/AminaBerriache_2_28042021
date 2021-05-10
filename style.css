@@ -110,6 +110,7 @@ h1 {
     padding-left:15px;
     width: 100%;  
     font-size: 15px;
+    outline: none;
 }
 .search-input {
     flex-grow: 1;
