@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,24 +12,20 @@
 </head>
 <body>
     <div class="content-padding-desktop">
-        <header id="header">
+        <header>
             <!--********LOGO********-->
-            <div>
-                <img src="images/logo/Reservia.svg" alt="Logo de Reservia" id="logo"/>
+            <div class="logo">
+                <img src="images/logo/Reservia.svg" alt="Logo de Reservia"/>
             </div>
-            <nav>
-                <ul>
-                    <li class="item-menu-desktop item-menu-desktop-actif"><a href="#ancre-hebergement" class="menu-desktop">Hébergements</a></li> 
-                    <li class="item-menu-desktop item-menu-desktop-actif"><a href="#ancre-activity" class="menu-desktop">Activités</a></li> 
-                    <li class="item-menu-desktop"><a href="#" id="inscrire">S'inscrire</a></li>
-                </ul>
+            <!--*******MENU*********-->
+            <nav class="menu">
+                <a class="item-menu"href="#ancre-hebergement">Hébergements</a>
+                <a class="item-menu"href="#ancre-activity">Activités</a>
             </nav>
+            <div class="login">
+                <a href="#inscrire" id="inscrire">S'inscrire</a>
+            </div>
         </header>
-        <!--********BARRE DE MENU + BORDURES********-->
-        <ul id="menu-mobile">
-            <li class="item-menu-border item-menu-actif"><a href="#ancre-hebergement">Hébergements</a></li>
-            <li class="item-menu-border item-menu-actif"><a href="#ancre-activity">Activités</a></li>
-        </ul>
         <section class="content-padding-mobile">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p id="subtitle-1">
@@ -107,7 +103,7 @@
                         </div>
                     </div>
                     <div id="all-post-aside">
-                        <div class="card post-aside">
+                        <a href="#card-populaire" class="card post-aside">
                             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                             alt="chambre d'hotel" class="picture-aside"/>
                             <div class="subtitles-aside">
@@ -123,8 +119,8 @@
                                     <i class="fas fa-star color-blue"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card post-aside">
+                        </a>
+                        <a href="#card-populaire" class="card post-aside">
                             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hôte" 
                                 class="picture-aside"/>
                             <div class="subtitles-aside">
@@ -140,8 +136,8 @@
                                     <i class="fas fa-star color-grey"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card post-aside">
+                        </a>
+                        <a href="#card-populaire" class="card post-aside">
                             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-aside"/>
                             <div class="subtitles-aside">
@@ -157,7 +153,7 @@
                                     <i class="fas fa-star color-grey"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </aside>
@@ -165,7 +161,7 @@
             <section id="hebergement-content">
                 <h1 id="ancre-hebergement">Hébergement à Marseille</h1>
                 <div id="all-post-hebergement">
-                    <div class="card post-hebergement">
+                    <a href="#card-hebergement" class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre d'auberge" 
                             class="picture-hebergement"/>
@@ -183,8 +179,8 @@
                                 <i class="fas fa-star color-grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card post-hebergement">
+                    </a>
+                    <a href="#card-hebergement" class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-hebergement"/>
@@ -202,8 +198,8 @@
                                 <i class="fas fa-star color-blue"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card post-hebergement">
+                    </a>
+                    <a href="#card-hebergement" class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-hebergement"/>
@@ -221,8 +217,8 @@
                                 <i class="fas fa-star color-grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card post-hebergement">
+                    </a>
+                    <a href="#card-hebergement" class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre d'hôtel" 
                             class="picture-hebergement"/>
@@ -240,8 +236,8 @@
                                 <i class="fas fa-star color-grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card post-hebergement">
+                    </a>
+                    <a href="#card-hebergement" class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre d'auberge" 
                             class="picture-hebergement"/>
@@ -259,8 +255,8 @@
                                 <i class="fas fa-star color-grey"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card post-hebergement">
+                    </a>
+                    <a href="#card-hebergement" class="card post-hebergement">
                         <div>
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre d'auberge" 
                             class="picture-hebergement"/>
@@ -278,7 +274,7 @@
                                 <i class="fas fa-star color-blue"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <h4>Afficher plus</h4>
             
@@ -289,48 +285,48 @@
             <div id="activity-content">
                 <h1 id="ancre-activity">Activités à Marseille</h1>
                 <div class="grid all-post-activity">
-                    <div class="card post-activity card1">
+                    <a href="#card-activity" class="card post-activity card1">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" 
                             class="picture-activity"/>
                         <div>
                             <h3 class="subtitle-7">Vieux Port</h3>
                         </div>
-                    </div>
-                    <div class="card post-activity card2">
+                    </a>
+                    <a href="#card-activity" class="card post-activity card2">
                         <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" 
                             class="picture-activity"/>
                         <div>
                             <h3 class="subtitle-7">Fort de Pomègues</h3>
                         </div>
-                    </div>
-                    <div class="card post-activity card3">
+                    </a>
+                    <a href="#card-activity" class="card post-activity card3">
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" 
                             class="picture-activity"/>
                         <div>
                             <h3 class="subtitle-7">Îles du Frioul</h3>
                         </div>
-                    </div>
-                    <div class="card post-activity card4">
+                    </a>
+                    <a href="#card-activity" class="card post-activity card4">
                         <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="arc National des Calanques" 
                             class="picture-activity"/>
                         <div>
                             <h3 class="subtitle-7">Parc National des Calanques</h3>
                         </div>
-                    </div>
-                    <div class="card post-activity card5">
+                    </a>
+                    <a href="#card-activity" class="card post-activity card5">
                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" 
                             class="picture-activity"/>
                         <div>
                             <h3 class="subtitle-7">Notre-Dame-de-la-Garde</h3>
                         </div>
-                    </div>
-                    <div class="card post-activity card6">
+                    </a>
+                    <a href="#card-activity" class="card post-activity card6">
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc LongChamp" 
                             class="picture-activity"/>
                         <div>
                             <h3 class="subtitle-7">Parc LongChamp</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
