@@ -237,7 +237,6 @@ aside {
 .subtitles-aside {
     flex-basis: 45%;
     margin: 9px 20px;
-    position: relative;
 }
 .subtitle-3 {
     font-size: 1em;
@@ -252,7 +251,7 @@ aside {
 .star-aside {
     font-size: 0.7em;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
 }
 .color-grey {
     color: #d9d9d9;
